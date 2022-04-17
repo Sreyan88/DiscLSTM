@@ -6,7 +6,10 @@ PyTorch Code for [A Discourse Aware Sequence Learning Approach for Emotion Recog
 
 ![DiscLSTM Cell Designed :](./DiscLSTMCell.png "This LSTM Cell Uses both the graph embeddings and text embeddings").
 
-Dependency Graphs : https://drive.google.com/drive/folders/14fMl_APuJ9S0y-2vwewzlC64_nYj7mum?usp=sharing
+### Preparation:
+Before running the model, download the following files for 4 datasets: 
+- Extracted Utterance Features : https://drive.google.com/file/d/1R5K_2PlZ3p3RFQ1Ycgmo3TgxvYBzptQG/view?usp=sharing 
+- Dependency Graphs : https://drive.google.com/drive/folders/14fMl_APuJ9S0y-2vwewzlC64_nYj7mum?usp=sharing
 
 ## Cite
 

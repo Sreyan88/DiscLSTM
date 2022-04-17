@@ -60,21 +60,14 @@ if __name__ == '__main__':
     parser.add_argument('--gnn_layers', type=int, default=2, help='Number of gnn layers.')
     parser.add_argument('--emb_dim', type=int, default=1024, help='Feature size.')
 
-    parser.add_argument('--attn_type', type=str, default='rgcn', choices=['dotprod','linear','bilinear', 'rgcn'], help='Feature size.')
-    parser.add_argument('--no_rel_attn',  action='store_true', default=False, help='no relation for edges' )
 
     parser.add_argument('--max_sent_len', type=int, default=200,
                         help='max content length for each text, if set to 0, then the max length has no constrain')
 
     parser.add_argument('--no_cuda', action='store_true', default=False, help='does not use GPU')
 
-    parser.add_argument('--dataset_name', default='MELD', type= str, help='dataset name, IEMOCAP or MELD or DailyDialog')
+    parser.add_argument('--dataset_name', default='MELD', type= str, help='dataset name, IEMOCAP or MELD or DailyDialog or EmoryNLP')
 
-    parser.add_argument('--windowp', type=int, default=1,
-                        help='context window size for constructing edges in graph model for past utterances')
-
-    parser.add_argument('--windowf', type=int, default=0,
-                        help='context window size for constructing edges in graph model for future utterances')
 
     parser.add_argument('--max_grad_norm', type=float, default=5.0, help='Gradient clipping.')
 
@@ -88,7 +81,6 @@ if __name__ == '__main__':
 
     parser.add_argument('--tensorboard', action='store_true', default=False, help='Enables tensorboard log')
 
-    parser.add_argument('--nodal_att_type', type=str, default=None, choices=['global','past'], help='type of nodal attention')
 
     args = parser.parse_args()
     print(args)

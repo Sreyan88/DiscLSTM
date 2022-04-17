@@ -16,7 +16,7 @@ class Model_DSTM(nn.Module):
         
         gats = []
         for _ in range(args.gnn_layers):
-            gats += [GAT_dialoggcn_v1(args.hidden_dim)]
+            gats += [GatLinear(args.hidden_dim)]
         self.gats = nn.ModuleList(gats)
         
 

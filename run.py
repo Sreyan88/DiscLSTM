@@ -1,5 +1,4 @@
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = '0'
 import numpy as np, argparse, time, pickle, random
 import torch
 import torch.nn as nn
@@ -10,12 +9,11 @@ from sklearn.metrics import f1_score, confusion_matrix, accuracy_score, classifi
 from trainer import  train_or_eval_model, save_badcase
 from dataset import MELDDataset
 from dataloader import get_MELD_loaders
-from transformers import AdamW
 import adabound
-import copy
 
-# We use seed = 100 for reproduction of the results reported in the paper.
+# We use seed = 100 for reproduction of the results reported in the paper. We use "0"th GPU for training 
 seed = 100
+os.environ["CUDA_VISIBLE_DEVICES"] = '0'
 
 import logging
 
@@ -122,7 +120,7 @@ if __name__ == '__main__':
     print("====================LOADING OVER ===========")
 
     print('building model..')
-    model = SOTA(args, n_classes)
+    model = Model_DSTM(args, n_classes)
     # model = DAGERC_fushion(args,n_classes)
 
 

@@ -2,9 +2,9 @@ import torch.nn as nn
 import math 
 import torch
 
-class SynLSTM(nn.Module):
+class DiscLSTM(nn.Module):
     def __init__(self, input_sz, hidden_sz, g_sz):
-        super(SynLSTM, self).__init__()
+        super(DiscLSTM, self).__init__()
         self.input_sz = input_sz
         self.hidden_sz = hidden_sz
         self.g_sz = g_sz

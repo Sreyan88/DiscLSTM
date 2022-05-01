@@ -4,7 +4,7 @@ PyTorch Code for [A Discourse Aware Sequence Learning Approach for Emotion Recog
 
 ### DiscLSTM Cell Representation:
 
-![DiscLSTM Cell Designed :](./images/Model_image.jpg "This LSTM Cell Uses both the graph embeddings and text embeddings").
+![Proposed Architecture :](./images/ModelImage.jpg).
 
 ### Preparation:
 Before running the model, download the following files for 4 datasets: 

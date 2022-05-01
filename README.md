@@ -2,9 +2,9 @@
 
 PyTorch Code for [A Discourse Aware Sequence Learning Approach for Emotion Recognition in Conversations](https://arxiv.org/abs/2203.16799)
 
-### DiscLSTM Cell Representation:
+### Proposed Architecture:
 
-![Proposed Architecture :](./images/ModelImage.jpg).
+![Proposed Architecture :](./images/ModelImage.jpg)
 
 ### Preparation:
 Before running the model, download the following files for 4 datasets: 
